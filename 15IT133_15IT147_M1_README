@@ -1,0 +1,57 @@
+﻿PROJECT MEMBERS:
+Suraksha 15IT147
+Rajgauri Khemnar 15IT133
+Date of submission: 16/02/18
+
+Module 1: Implementing decision tree using ID3 algorithm
+
+Paper Title: Malware Detection System using ID3 Algorithm for Android
+
+Source files included:
+id3.py
+decisiontree.py
+Node.py
+output.py
+
+To run the program, open terminal and open the folder containing the above files. Run the command "python id3.py". This program will write the output to output.py which can then be run with “python output.py” and that will output to the console the target value for each entry of test data. 
+To change the training data, change string in the function “open()” in line 8 of main.py to the path of the new training data. To change the target attribute, change the string in line 12 of main.py to the new target attribute. And to change the test data, change the string in the function “open()” at line 31 or main.py to the path of the new test data. 
+
+Output of Test Cases:
+
+seedtestset.csv
+Test case 1 = powdery-mildew
+Test case 2 = brown-spot
+Test case 3 = rhizoctonia-root-rot
+Test case 4 = rhizoctonia-root-rot
+Test case 5 = charcoal-rot
+This dataset is used to determine the class of seeds.
+
+tennistestset.csv:
+Test case 1 = yes
+Test case 2 = yes
+Test case 3 = yes
+Test case 4 = no
+Test case 5 = no
+This dataset is used to determine whether the weather permits you to play tennis or not.
+
+vote.csv:
+Test case 1 = democrat
+Test case 2 = democrat
+Test case 3 = democrat
+Test case 4 = democrat
+Test case 5 = democrat
+This dataset is used to determine whether the contesting candidate is a republican or democrat.
+
+seedtestset2.csv
+Test case 1 = charcoal-rot
+Test case 2 = rhizoctonia-root-rot
+Test case 3 = phytophthora-rot
+Test case 4 = phytophthora-rot
+Test case 5 = diaporthe-stem-canker
+This dataset is used to determine the class of seeds.
+
+About the code:
+main.py imports and creates the tree using decisiontree.py. It uses the decisiontree.py, implements the ID3 algorithm and returns the resulting tree as a multi-dimensional dictionary. This dictionary is then fed to output.py which processes the dictionary as a tree. It does so by importing and using Node.py and generate appropriate output based on that tree. 
+
+Reference:
+http://www.ijsr.net/archive/v4i6/SUB155532.pdf
